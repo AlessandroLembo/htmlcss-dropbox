@@ -11,11 +11,12 @@ body{
     font-family: sans-serif;
     padding-top: 60px;
     background-color: black;
-    color: white;
 }
 
 .container{
     width: 100%;
+    color: black;
+    font-family: 'Open Sans', sans-serif;
 }
 
 header{
@@ -32,8 +33,10 @@ main{
     overflow-y: auto;
 }
 
-
-
+.wrapper{
+    width: 70%;
+    margin: 0 auto; 
+}
 
 /* Header */
 .header-container{
@@ -55,13 +58,81 @@ main{
 /* Jumbotron */
 .jumbotron{
     background-color: aqua;
-    height: 600px;
+    height: 700px;
 }
 
+.jumbo-top{
+    padding: 40px 0;
+}
+
+#big-title{
+    font-size: 87px;
+    font-weight: bold;
+    line-height: 1.2;
+}
+
+.paragraph{
+    font-size: 20px;
+}
+
+.btn-blue, .btn-white{
+    cursor: pointer;
+    padding: 5px 20px;
+    border: none;
+    display: block;
+}
+
+.space{
+    padding: 20px 0;
+}
+
+.btn-blue{
+    color: white;
+    background-color: dodgerblue;
+    height: 40px;
+}
+
+.btn-white{
+    color: black;
+    background-color: white;
+    height: 25px;
+}
+
+.link-style{
+    color: black;
+    text-decoration: none;
+}
+
+.jumbo-bottom{
+    display: flex;
+    justify-content: space-between;
+}
+
+.jumbo-left{
+    flex-basis: 30%;
+}
+
+.jumbo-left-content{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.jumbo-right{
+    flex-basis: 70%;
+}
+
+.img-jumbo{
+    max-width: 700px;
+    position: relative;
+    right: 0;
+    top: 20%;
+}
 
 /* Main */
 .main-container{
-    width: 100%;
     background-color: white;
 }
 
