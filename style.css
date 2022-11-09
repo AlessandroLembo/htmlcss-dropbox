@@ -83,7 +83,7 @@ main{
 }
 
 .space{
-    padding: 20px 0;
+    padding-bottom: 20px;
 }
 
 .btn-blue{
@@ -112,6 +112,11 @@ main{
     flex-basis: 30%;
 }
 
+.jumbo-right{
+    flex-basis: 70%;
+}
+
+
 .jumbo-left-content{
     display: flex;
     flex-direction: column;
@@ -120,15 +125,9 @@ main{
     height: 100%;
 }
 
-.jumbo-right{
-    flex-basis: 70%;
-}
 
 .img-jumbo{
-    max-width: 700px;
-    position: relative;
-    right: 0;
-    top: 20%;
+    max-width: 93%;
 }
 
 /* Main */
