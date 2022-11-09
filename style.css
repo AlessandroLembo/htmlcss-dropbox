@@ -38,39 +38,8 @@ main{
     margin: 0 auto; 
 }
 
-/* Header */
-.header-container{
-    height: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
 
-.left-header, .right-header{
-    flex-basis: 30%;
-    height: 60px;
-    border: 2px dashed white;
-}
-
-/* Chiusura Header */
-
-
-/* Jumbotron */
-.jumbotron{
-    background-color: aqua;
-    height: 700px;
-}
-
-.jumbo-top{
-    padding: 40px 0;
-}
-
-#big-title{
-    font-size: 87px;
-    font-weight: bold;
-    line-height: 1.2;
-}
-
+/* Utils */
 .paragraph{
     font-size: 20px;
 }
@@ -80,10 +49,6 @@ main{
     padding: 5px 20px;
     border: none;
     display: block;
-}
-
-.space{
-    padding-bottom: 20px;
 }
 
 .btn-blue{
@@ -98,11 +63,52 @@ main{
     height: 25px;
 }
 
+.space{
+    padding-bottom: 25px;
+}
+
 .link-style{
     color: black;
     text-decoration: none;
 }
 
+
+/* Header */
+.header-container{
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.left-header, .right-header{
+    flex-basis: 30%;
+    height: 60px;
+    border: 2px dashed white;
+}
+
+
+/* Chiusura Header */
+
+
+/* Jumbotron */
+.jumbotron{
+    background-color: aqua;
+    height: 730px;
+}
+
+/* Jumbo top */
+.jumbo-top{
+    padding: 40px 0;
+}
+
+#big-title{
+    font-size: 87px;
+    font-weight: bold;
+    line-height: 1.2;
+}
+
+/* Jumbo bottom */
 .jumbo-bottom{
     display: flex;
     justify-content: space-between;
@@ -110,25 +116,24 @@ main{
 
 .jumbo-left{
     flex-basis: 30%;
+    position: relative;
+    
 }
 
 .jumbo-right{
     flex-basis: 70%;
 }
 
-
-.jumbo-left-content{
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: space-between;
-    height: 100%;
+.fa-arrow-down{
+    position: absolute;
+    left: 0;
+    bottom: 100px;
 }
-
 
 .img-jumbo{
-    max-width: 93%;
+    max-width: 100%;
 }
+
 
 /* Main */
 .main-container{
