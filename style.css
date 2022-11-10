@@ -199,13 +199,12 @@ main{
 
 /* intestazione della colonna */
 .col-head{
-    /* width: 100%; */
     height: 50px;
     border: 1px solid rgba(0, 0, 0, 0.2);
     position:relative;
 }
 
-.icon-business{
+.icon-business, .icon-contact{
     /* line-height: 50px; */
     position: absolute;
     left: 50%;
@@ -248,4 +247,20 @@ main{
     width: 45px;
     height: 45px;
     border-top: 1px solid rgba(0, 0, 0, 0.2)
+}
+
+/* Business Contact */
+
+.contact-main{
+    display: flex;
+    height: 300px;
+    border: 1px solid rgba(0, 0, 0, 0.2)
+}
+
+.salesoffice-contact{
+    flex-basis: 65%;
+}
+
+.salesoffice-button{
+    flex-basis: 35%;
 }
