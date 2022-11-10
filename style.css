@@ -55,6 +55,11 @@ main{
     display: flex;
 }
 
+.column-direction{
+    display: flex;
+    flex-direction: column;
+}
+
 .medium-title{
     font-size:45px;
 }
@@ -118,7 +123,15 @@ img{
     background-color: white;
     height: 25px;
 }
-    
+
+.column{
+    flex-basis: calc(100% / 3);
+}
+
+.small-column{
+    flex-basis: calc(100 / 5);
+    }
+
 
 /* Header */
 .header-container{
@@ -193,9 +206,7 @@ main{
     padding-right: 20px;
 }
 
-.column{
-    flex-basis: calc(100% / 3);
-}
+
 
 /* intestazione della colonna */
 .col-head{
