@@ -8,23 +8,25 @@
 
 /* Generics */
 body{
-    font-family: sans-serif;
+    font-family: 'Open Sans', sans-serif;
     padding-top: 60px;
     background-color: black;
 }
 
 .container{
-    width: 100%;
+    /* width: 100%; */
     color: black;
+    /* background-color: white; */
     font-family: 'Open Sans', sans-serif;
 }
 
 header{
-    background-color: brown;
+    background-color: white;
     position: fixed;
     top: 0;
     left: 0;
-    width: 100%;
+    right: 0;
+    z-index: 1;
     height: 60px;
 }
 
@@ -34,37 +36,51 @@ main{
 }
 
 .wrapper{
-    width: 70%;
+    width: 1300px;
     margin: 0 auto; 
 }
 
+.mini-wrapper{
+    width: 1100px;
+    margin: 0 auto;
+}
 
-/* Utils */
+#big-title{
+    font-size: 87px;
+    font-weight: bold;
+    line-height: 1.2;
+}
+
+.medium-title{
+    font-size:45px;
+}
+
+.small-title{
+    font-size: 30px;
+}
+
+.big-pdg-space{
+    padding-bottom: 40px;
+}
+
+.small-pdg-space{
+    padding-bottom: 25px;
+}
+
+.exsmall-pdg-space{
+    padding-bottom: 15px;
+}
+
+.big-mrg-space{
+    margin-bottom: 60px;
+}
+
+.small-mrg-space{
+    margin-bottom: 40px;
+}
+
 .paragraph{
     font-size: 20px;
-}
-
-.btn-blue, .btn-white{
-    cursor: pointer;
-    padding: 5px 20px;
-    border: none;
-    display: block;
-}
-
-.btn-blue{
-    color: white;
-    background-color: dodgerblue;
-    height: 40px;
-}
-
-.btn-white{
-    color: black;
-    background-color: white;
-    height: 25px;
-}
-
-.space{
-    padding-bottom: 25px;
 }
 
 .link-style{
@@ -72,6 +88,33 @@ main{
     text-decoration: none;
 }
 
+img{
+    max-width: 100%;
+    display: block;
+}
+
+
+/* Utils */
+
+.btn-blue, .btn-white{
+    cursor: pointer;
+    padding: 5px 20px;
+    display: inline-block;
+}
+
+.btn-blue{
+    color: white;
+    background-color: dodgerblue;
+    height: 40px;
+    border: none;
+}
+
+.btn-white{
+    color: black;
+    background-color: white;
+    height: 25px;
+}
+    
 
 /* Header */
 .header-container{
@@ -87,25 +130,23 @@ main{
     border: 2px dashed white;
 }
 
-
 /* Chiusura Header */
 
 
-/* Jumbotron */
-.jumbotron{
+
+/* Main */
+
+main{
+    background-color: white;
+}
+/* Section Jumbotron */
+#jumbotron{
     background-color: aqua;
+}
+
+.jumbo{
     height: 730px;
-}
-
-/* Jumbo top */
-.jumbo-top{
-    padding: 40px 0;
-}
-
-#big-title{
-    font-size: 87px;
-    font-weight: bold;
-    line-height: 1.2;
+    padding-top: 50px;
 }
 
 /* Jumbo bottom */
@@ -115,9 +156,7 @@ main{
 }
 
 .jumbo-left{
-    flex-basis: 30%;
-    position: relative;
-    
+    flex-basis: 30%;    
 }
 
 .jumbo-right{
@@ -125,18 +164,88 @@ main{
 }
 
 .fa-arrow-down{
-    position: absolute;
+    position: relative;
     left: 0;
-    bottom: 100px;
+    bottom: -30px;
 }
 
-.img-jumbo{
-    max-width: 100%;
+/* Section Business */
+#business{
+    margin-top: 150px;
 }
 
+/* Business plan */
 
-/* Main */
-.main-container{
-    background-color: white;
+.monthly, .annual{
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    /* background-color: brown; */
+    border: 1px solid black;
 }
 
+.space-delaypayments{
+    padding-right: 20px;
+}
+
+.row{
+    display: flex;
+}
+
+.column{
+    flex-basis: calc(100% / 3);
+}
+
+/* intestazione della colonna */
+.col-head{
+    /* width: 100%; */
+    height: 50px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    position:relative;
+}
+
+.icon-business{
+    /* line-height: 50px; */
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    
+}
+
+/* corpo della colonna */
+.col-main{
+
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    padding-top: 40px;
+}
+
+.col-container{
+    width: 85%;
+    margin: 0 auto;
+
+}
+
+.icon-plan{
+    display: flex;
+}
+
+.flex-icon{
+    flex-basis: 10%;
+}
+
+.flex-text{
+    flex-basis: 90%;
+}
+
+.btn-gratis{
+    display: inline-block;
+    width: 100%;
+}
+
+.trasparent-box{
+    width: 45px;
+    height: 45px;
+    border-top: 1px solid rgba(0, 0, 0, 0.2)
+}
