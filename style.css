@@ -51,10 +51,6 @@ main{
     line-height: 1.2;
 }
 
-.row{
-    display: flex;
-}
-
 .column-direction{
     display: flex;
     flex-direction: column;
@@ -92,11 +88,6 @@ main{
     font-size: 20px;
 }
 
-.link-style{
-    color: black;
-    text-decoration: none;
-}
-
 img{
     max-width: 100%;
     display: block;
@@ -104,6 +95,10 @@ img{
 
 
 /* Utils */
+.link-style{
+    color: black;
+    text-decoration: none;
+}
 
 .btn-blue, .btn-white{
     cursor: pointer;
@@ -118,20 +113,43 @@ img{
     border: none;
 }
 
+.btnsmall-blue{
+    color: white;
+    background-color: dodgerblue;
+    height: 35px;
+    border: none;
+    padding: 10px 15px;
+}
+
 .btn-white{
     color: black;
     background-color: white;
     height: 25px;
 }
 
+.row{
+    display: flex;
+}
+
 .column{
     flex-basis: calc(100% / 3);
+}
+
+.mrg-col{
+    margin: 0 40px;
 }
 
 .small-column{
     flex-basis: calc(100 / 5);
     }
 
+.left-side{
+    flex-basis: 65%;
+    }
+    
+.right-side{
+    flex-basis: 35%;
+    }
 
 /* Header */
 .header-container{
@@ -139,12 +157,28 @@ img{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 .left-header, .right-header{
-    flex-basis: 30%;
+    flex-basis: 40%;
     height: 60px;
-    border: 2px dashed white;
+}
+
+.navbar{
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.navbar li{
+    list-style-type: none;
+    text-align: center; 
+    padding: 0 20px;
+}
+
+.navbar-right{
+    justify-content: flex-end;
 }
 
 /* Chiusura Header */
@@ -170,6 +204,7 @@ main{
 .jumbo-bottom{
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .jumbo-left{
@@ -233,7 +268,6 @@ main{
 .col-container{
     width: 85%;
     margin: 0 auto;
-
 }
 
 .icon-plan{
@@ -248,7 +282,7 @@ main{
     flex-basis: 90%;
 }
 
-.btn-gratis{
+.btn-col{
     display: inline-block;
     width: 100%;
 }
@@ -263,17 +297,17 @@ main{
 
 .salesoffice-contact{
     display: flex;
+    justify-content: space-around;
     height: 300px;
     border: 1px solid rgba(0, 0, 0, 0.2)
 }
 
-.left-side{
-    flex-basis: 65%;
+.left-col{
+    flex-basis: calc((100% / 3) * 2);
 }
 
-.right-side{
-    flex-basis: 35%;
-}
+
+
 
 /* Business find partner */
 
