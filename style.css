@@ -44,6 +44,7 @@ main{
 
 .row{
     display: flex;
+    flex: wrap;
     gap: 40px;
 }
 
@@ -141,6 +142,7 @@ img{
 
 .column{
     flex-basis: calc(100% / 3);
+    flex-wrap: wrap;
 }
 
 .small-column{
@@ -187,16 +189,14 @@ img{
 
 /* Chiusura Header */
 
-
-
 /* Main */
 
 main{
     background-color: white;
 }
 /* Section Jumbotron */
-#jumbotron{
-    background-color: aqua;
+.jumbotron{
+    background-color: #ADD8E6;
 }
 
 .jumbo{
@@ -226,7 +226,7 @@ main{
 }
 
 /* Section Business */
-#business{
+.pdgtop-space{
     margin-top: 150px;
 }
 
@@ -312,4 +312,88 @@ main{
     padding-top: 50px;
 }
 
-/* Choose operations with dropbox*/
+/* Choose operations section*/
+
+/* Dropbox members section */
+.row-members{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.box-cards{
+    height: 600px;
+}
+
+.col-cards{
+    flex-basis: calc(100% / 3);
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.cards{
+    width: 50%;
+    height: 50%;
+    border: 10px solid transparent;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cards img{
+    width: 50%;
+    filter: 1;
+}
+
+.card-center{
+    width: 100%;
+    padding: 70px;
+}
+
+.card-center img{
+    width: 55%;
+    /* padding: 70px; */
+}
+
+/* color cards */
+.green-card:hover{
+    border: 15px solid rgba(255, 255, 255, 0.3);
+}
+
+.green-card{
+    background-color: #90EEA1;
+}
+
+.purple-card{
+    background-color:#800080;
+}
+
+.lightblue-card{
+    background-color:#00BFFF;
+}
+
+.lightred-card{
+    background-color:#CD5C5C;
+}
+
+.card-center{
+    background-color: #FFFAF0;
+}
+
+.red-card{
+    background-color: #B22222;
+}
+
+.skyblue-card{
+    background-color: #ADD8E6;
+}
+
+.blue-card{
+    background-color: #191970;
+}
+
+.yellow-card{
+    background-color:#FFD700;
+}
+
+
