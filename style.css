@@ -7,17 +7,14 @@
 
 
 /* Generics */
-body{
-    font-family: 'Open Sans', sans-serif;
-    padding-top: 60px;
-    background-color: black;
-}
-
 .container{
     /* width: 100%; */
     color: black;
-    /* background-color: white; */
+    background-color: white; 
     font-family: 'Open Sans', sans-serif;
+    padding-top: 60px;
+    background-color: black;
+    /* overflow-y: hidden; */
 }
 
 header{
@@ -45,6 +42,13 @@ main{
     margin: 0 auto;
 }
 
+.row{
+    display: flex;
+    gap: 40px;
+}
+
+/* Utils */
+
 #big-title{
     font-size: 87px;
     font-weight: bold;
@@ -62,6 +66,10 @@ main{
 
 .small-title{
     font-size: 30px;
+}
+
+.extra-pdg-space{
+    padding-bottom: 100px;
 }
 
 .big-pdg-space{
@@ -93,8 +101,6 @@ img{
     display: block;
 }
 
-
-/* Utils */
 .link-style{
     color: black;
     text-decoration: none;
@@ -102,7 +108,6 @@ img{
 
 .btn-blue, .btn-white{
     cursor: pointer;
-    padding: 5px 20px;
     display: inline-block;
 }
 
@@ -111,6 +116,7 @@ img{
     background-color: dodgerblue;
     height: 40px;
     border: none;
+    padding: 5px 20px;
 }
 
 .btnsmall-blue{
@@ -124,19 +130,17 @@ img{
 .btn-white{
     color: black;
     background-color: white;
-    height: 25px;
+    height: 30px;
+    padding: 7px 15px;
 }
 
-.row{
-    display: flex;
+.btn-col{
+    display: inline-block;
+    width: 100%;
 }
 
 .column{
     flex-basis: calc(100% / 3);
-}
-
-.mrg-col{
-    margin: 0 40px;
 }
 
 .small-column{
@@ -241,8 +245,6 @@ main{
     padding-right: 20px;
 }
 
-
-
 /* intestazione della colonna */
 .col-head{
     height: 50px;
@@ -256,7 +258,6 @@ main{
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
-    
 }
 
 /* corpo della colonna */
@@ -282,11 +283,6 @@ main{
     flex-basis: 90%;
 }
 
-.btn-col{
-    display: inline-block;
-    width: 100%;
-}
-
 .trasparent-box{
     width: 45px;
     height: 45px;
@@ -295,21 +291,25 @@ main{
 
 /* Business Contact */
 
-.salesoffice-contact{
-    display: flex;
-    justify-content: space-around;
-    height: 300px;
+.box-main{
+    padding: 20px;
     border: 1px solid rgba(0, 0, 0, 0.2)
 }
 
-.left-col{
-    flex-basis: calc((100% / 3) * 2);
+.salesoffice-contact{
+    display: flex;
+    justify-content: space-between;
+    height: 300px;
 }
 
-
-
-
 /* Business find partner */
+.find-partner{
+    display: flex;
+    gap: 40px;
+}
 
+.choose-partner{
+    padding-top: 50px;
+}
 
 /* Choose operations with dropbox*/
