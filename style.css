@@ -48,6 +48,7 @@ main{
     gap: 40px;
 }
 
+
 /* Utils */
 
 #big-title{
@@ -107,39 +108,6 @@ img{
     text-decoration: none;
 }
 
-.btn-blue, .btn-white{
-    cursor: pointer;
-    display: inline-block;
-}
-
-.btn-blue{
-    color: white;
-    background-color: dodgerblue;
-    height: 40px;
-    border: none;
-    padding: 5px 20px;
-}
-
-.btnsmall-blue{
-    color: white;
-    background-color: dodgerblue;
-    height: 35px;
-    border: none;
-    padding: 10px 15px;
-}
-
-.btn-white{
-    color: black;
-    background-color: white;
-    height: 30px;
-    padding: 7px 15px;
-}
-
-.btn-col{
-    display: inline-block;
-    width: 100%;
-}
-
 .column{
     flex-basis: calc(100% / 3);
     flex-wrap: wrap;
@@ -156,6 +124,55 @@ img{
 .right-side{
     flex-basis: 35%;
     }
+
+.purple-title{
+    color: purple;
+    font-size: 35px;
+}
+
+/* all buttons */
+.btn-blue, .btn-white{
+     cursor: pointer;
+     display: inline-block;
+}
+    
+.btn-blue{
+     color: white;
+     background-color: dodgerblue;
+     height: 40px;
+     border: none;
+     padding: 5px 20px;
+}
+    
+.btnsmall-blue{
+    color: white;
+    background-color: dodgerblue;
+    cursor: pointer;
+    height: 35px;
+    border: none;
+    padding: 10px 15px;
+}
+    
+.btn-white{
+    color: black;
+    background-color: white;
+    height: 30px;
+    padding: 7px 15px;
+}
+    
+.btn-col{
+    display: inline-block;
+    width: 100%;
+    cursor: pointer;
+}    
+
+.border-button{
+    border: none;
+    background-color: rgba(255, 255, 255, 0.7);
+    cursor: pointer;
+    padding: 5px 30px;
+} 
+
 
 /* Header */
 .header-container{
@@ -245,7 +262,7 @@ main{
     padding-right: 20px;
 }
 
-/* intestazione della colonna */
+/* section business head column*/
 .col-head{
     height: 50px;
     border: 1px solid rgba(0, 0, 0, 0.2);
@@ -260,7 +277,7 @@ main{
     transform: translate(-50%, -50%);
 }
 
-/* corpo della colonna */
+/* section business main column */
 .col-main{
     border: 1px solid rgba(0, 0, 0, 0.2);
     padding-top: 40px;
@@ -395,5 +412,23 @@ main{
 .yellow-card{
     background-color:#FFD700;
 }
+
+/* Start your business */
+
+.start-business-bkg{
+    background-color:#ADD8E6;
+    height: 320px;
+}
+
+.box-dropbox{
+    line-height: 320px;
+}
+
+.start-business-row{
+    display: flex;
+    justify-content: space-between;
+}
+
+
 
 
