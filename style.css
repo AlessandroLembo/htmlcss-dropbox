@@ -5,6 +5,9 @@
     box-sizing: border-box;
 }
 
+body{
+    background-color: rgba(0, 0, 0, 0.9);
+}
 
 /* Generics */
 .container{
@@ -318,6 +321,7 @@ main{
     justify-content: space-between;
     height: 300px;
 }
+
 
 /* Business find partner */
 .find-partner{
