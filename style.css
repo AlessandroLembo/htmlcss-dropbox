@@ -6,18 +6,15 @@
 }
 
 body{
-    background-color: rgba(0, 0, 0, 0.9);
+    /* background-color: rgba(0, 0, 0, 0.9); */
+    color: black;
+    background-color: white;
 }
 
 /* Generics */
-.container{
-    /* width: 100%; */
-    color: black;
-    background-color: white; 
+.container{ 
     font-family: 'Open Sans', sans-serif;
     padding-top: 60px;
-    background-color: black;
-    /* overflow-y: hidden; */
 }
 
 header{
@@ -51,18 +48,27 @@ main{
     gap: 40px;
 }
 
+.jumbotron p{
+    font-size: 20px;
+}
+
+img{
+    max-width: 100%;
+    display: block;
+}
+
 
 /* Utils */
+/*
+.column-direction{
+    display: flex;
+    flex-direction: column;
+}*/
 
 #big-title{
     font-size: 87px;
     font-weight: bold;
     line-height: 1.2;
-}
-
-.column-direction{
-    display: flex;
-    flex-direction: column;
 }
 
 .medium-title{
@@ -95,15 +101,6 @@ main{
 
 .small-mrg-space{
     margin-bottom: 40px;
-}
-
-.paragraph{
-    font-size: 20px;
-}
-
-img{
-    max-width: 100%;
-    display: block;
 }
 
 .link-style{
@@ -168,14 +165,6 @@ img{
     width: 100%;
     cursor: pointer;
 }    
-
-.border-button{
-    border: none;
-    background-color: rgba(255, 255, 255, 0.7);
-    cursor: pointer;
-    padding: 5px 30px;
-} 
-
 
 /* Header */
 .header-container{
@@ -257,7 +246,6 @@ main{
     width: 15px;
     height: 15px;
     border-radius: 50%;
-    /* background-color: brown; */
     border: 1px solid black;
 }
 
@@ -273,7 +261,6 @@ main{
 }
 
 .icon-business, .icon-contact{
-    /* line-height: 50px; */
     position: absolute;
     left: 50%;
     top: 50%;
@@ -311,7 +298,7 @@ main{
 
 /* Business Contact */
 
-.box-main{
+.box-contact{
     padding: 20px;
     border: 1px solid rgba(0, 0, 0, 0.2)
 }
@@ -322,18 +309,13 @@ main{
     height: 300px;
 }
 
-
+/* Choose operations section*/
 /* Business find partner */
-.find-partner{
-    display: flex;
-    gap: 40px;
-}
 
 .choose-partner{
     padding-top: 50px;
 }
 
-/* Choose operations section*/
 
 /* Dropbox members section */
 .row-members{
@@ -355,7 +337,6 @@ main{
     width: 50%;
     height: 50%;
     border: 10px solid transparent;
-
     display: flex;
     justify-content: center;
     align-items: center;
@@ -373,7 +354,6 @@ main{
 
 .card-center img{
     width: 55%;
-    /* padding: 70px; */
 }
 
 /* color cards */
@@ -417,8 +397,8 @@ main{
     background-color:#FFD700;
 }
 
-/* Start your business */
 
+/* Start your business */
 .start-business-bkg{
     background-color:#ADD8E6;
     height: 320px;
@@ -432,6 +412,31 @@ main{
     display: flex;
     justify-content: space-between;
 }
+
+.border-button{
+    border: none;
+    background-color: rgba(255, 255, 255, 0.7);
+    cursor: pointer;
+    padding: 5px 30px;
+} 
+
+
+/* FAQ Section */
+.row-list{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+    border-top: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.last-faq{
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+
+
 
 
 
