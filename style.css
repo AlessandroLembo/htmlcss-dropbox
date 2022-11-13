@@ -27,7 +27,7 @@ header{
     height: 60px;
 }
 
-main{
+.big-wrapper{
     height: calc(100vh - 60px);
     overflow-y: auto;
 }
@@ -59,12 +59,6 @@ img{
 
 
 /* Utils */
-/*
-.column-direction{
-    display: flex;
-    flex-direction: column;
-}*/
-
 #big-title{
     font-size: 87px;
     font-weight: bold;
@@ -434,6 +428,25 @@ main{
 .last-faq{
     border-bottom: 1px solid rgba(0, 0, 0, 0.2);
 }
+
+/*footer*/
+footer{
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+}
+
+.small-column li{
+    list-style-type: none;
+}
+
+.footer-top .row{
+    justify-content: space-between;
+}
+
+.footer-pdg{
+    padding-top: 80px;
+}
+
 
 
 
