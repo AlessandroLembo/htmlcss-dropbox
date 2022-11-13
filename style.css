@@ -425,6 +425,10 @@ main{
     border-top: 1px solid rgba(0, 0, 0, 0.2);
 }
 
+.row-list i{
+    cursor: pointer;
+}
+
 .last-faq{
     border-bottom: 1px solid rgba(0, 0, 0, 0.2);
 }
@@ -435,8 +439,13 @@ footer{
     color: white;
 }
 
+/* footer-top */
 .small-column li{
     list-style-type: none;
+}
+
+.small-column a{
+    color: white;
 }
 
 .footer-top .row{
@@ -446,6 +455,23 @@ footer{
 .footer-pdg{
     padding-top: 80px;
 }
+
+/* footer-bottom */
+.black-box{
+    width: 120px;
+    height: 120px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.pdg-icon-footer{
+    padding-right: 5px;
+}
+
+.fa-sort-up{
+    cursor: pointer;
+}
+
+
 
 
 
